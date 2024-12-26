@@ -57,13 +57,13 @@ switch(shape){
     default:
         console.log("Choose Wrong input");   
 }
-//!Examples for loop
-var num=1;
-while(num>0){
-    console.log(num);
-    
-    num--;
-}
+//!Examples for loop(debugging example work in console)
+// var num=5;
+// debugger;
+// while(num>0){
+//    console.log(num);
+//      num--;
+// }
 //!Do-while loop
 num=7;
 do{
@@ -80,11 +80,11 @@ do{
 // console.log("You entered a valid positive number:",positiveNumber);
 
 //Table Example
-var a=12;
+var a=15;
 var b=1;
 while(b<=10){
     // console.log(a+" * "+b+" = "+a*b);
-    console.log(`5 * ${b} = ${5*b}`);
+    console.log(`${a} * ${b} = ${a*b}`);
     b++;
     }
     //For validating number we use do while loop
@@ -94,4 +94,37 @@ while(b<=10){
    //!(e.g., game over) is met.
    // network(wifi)show in game happen due to loop
 
-    
+    //For Prime 
+    var num=13;
+    var isPrime=true;
+    for(var i=2;i<num;i++){
+        if(num%i===0){
+            isPrime=false;
+            break;
+        }
+    }
+    if(isPrime){
+        console.log("Number is Prime");
+    }
+    else{
+        console.log("Number is Not Prime");
+        }
+        //leap year program
+        var year=2020;
+        if((year%4===0 && year%100!=0)|| year%400==0)
+            console.log("This year is leap year");
+        else{
+            console.log("This is not a leap year");  
+        }
+    //pattern Printing
+    //!string consider space as value never mislead
+    for(var i=1;i<=5;i++){
+        pattern="";
+        for(var j=1;j<=i;j++){
+            pattern+=" *";
+             }
+             console.log(pattern);
+             
+    } 
+  
+      
