@@ -56,8 +56,10 @@
 
 //! match(): Return an array of the matched value or null if no match is found.
 let text="Hello People, lala looking forward Hello for more";
-let result =text.match(/Hello/);
+let result =text.match(/hello/i);
 console.log(result);
+let result1=text.match(/hello/ig);
+console.log(result1);
 
 
 
