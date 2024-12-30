@@ -231,7 +231,7 @@ console.log(life);
 //? console.log([new Set(numbers)]);
 //? console.log(... new Set(numbers));
 
-//! hpw to compare and sort Array**
+//! how to compare and sort Array**
 
 //numbers=[1,2,3,2,6,4,5,6,7,8,9,9];
 //?numbers.sort();//!below operation done here
