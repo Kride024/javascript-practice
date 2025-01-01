@@ -216,7 +216,7 @@ const str="apple,orange,banana";
 
 //! Interview Question :
 
-//? Write a JavaScript function that print the letter 'a' through 'z' in the console. You should
+//! Q1 Write a JavaScript function that print the letter 'a' through 'z' in the console. You should
 // use a loop to iterate the letters and print each one on a new line?
 
 console.log("a".charCodeAt(0));//97
@@ -226,14 +226,60 @@ for(let char=97;char<123;char++){
     console.log(String.fromCharCode(char));    
 }
 
-//? Write a function to check if all the vowels presents in a string or not ?
+//! Q2 Write a function to check if all the vowels presents in a string or not ?
 let items="my name u is vinod @ thapa";
-const checkAllVowelPresentOrNot(items)=
+const checkAllVowelPresentOrNot=(str)=>{
+    const vowel="aeiou";
+    for(let char of vowel){
+        if(!str.includes(char)){
+            return false;
+        }
+    }
+    return true;
+}
 
 console.log(checkAllVowelPresentOrNot(items));
 
+//! Q3 Count number of vowel in the string.
 
+const countVowel=(str)=>{
+    const vowel="aeiou";
+    let count=0;
+    for(let char of str){
+        if(vowel.includes(char)){
+            count++;
+        }
+    }
+    return count;
+}
 
+console.log(countVowel("Hello a i o u World!"));
+
+//! Q4 check string is pangram(all a2z char present)
+//* Attempt 1:
+// const pangramChecker=(str)=>{
+//     let totalAlpha="";
+//     for(let char =97;char<=122;char++){
+//         totalAlpha = totalAlpha + String.fromCharCode(char);
+//     }
+//     console.log(totalAlpha);
+//     for(let char of totalAlpha){
+//         if(!str.includes(char))
+//             return false;   
+//          }
+//          return true;
+//     };
+//* Attempt 2:
+// const pangramChecker=(str)=>{
+//     let inputArr= str.toLowerCase().split("");
+//     const values =inputArr.filter((curr)=>
+//     curr.charCodeAt()>="a".charCodeAt() &&
+//     curr.charCodeAt()<="z".charCodeAt()
+// );
+// return [...new Set(values)].length===26; ( or new Set(values).size ===26 )
+
+// };
+ console.log(pangramChecker("The quick brown fox jumps over the   lazy dog"));
 
 
 
