@@ -143,3 +143,13 @@
 
 //?Iteration:
 //?for Each (Array.from): Iterate through NodeList or convert to an array for more flexible manipulation.
+
+//Very important
+//* when you use the browser's development tools console to select an element and change its text content using
+//* javascript, you are directly manipulating the DOM object in memory.Since the DOM is a live representation of the
+//* document , any change you make to the DOM objects are immediately reflected in the rendered web page.
+
+// However, these changes are typically temporary and exist only in the current session. When you reflect the page or
+//navigate array, the browser reloads the original HTML document from the server, and the DOM is reconstructed during the 
+//parsing process.Any modifications made to the DOM objects during the previous session are lost,and the page reverts 
+//to its original state.
