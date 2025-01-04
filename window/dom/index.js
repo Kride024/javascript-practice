@@ -96,7 +96,7 @@
 
 //*DOM Filtering
 
-//? childNodes / children:
+//? childNodes / children: (Children gave us HTML collection on other hand childNodes includes tree structure)
 //Get a NodeList or HTMLCollection and filter based on your criteria.
 
 //? Filtering Siblings:

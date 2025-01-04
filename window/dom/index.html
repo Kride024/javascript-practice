@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best JS Course</title>
-    ,link
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    
+    <h1>Best JS Course</h1>
+    <hr/>
+    <p>Understanding The DOM Tree Structure</p>
+    <p>IT's easy . Help JS to communicate with HTML</p>
+    <!-- Let's see DOM Navigation -->
+     <script>
+        // Navigation Across DOM
+        let parent =document;
+        let childBody=document.body;
+        let childHead=document.head;
+        let bodyChild=childBody.children;//only to get tag avoid spaces represented by text
+        let headChild=childHead.childNodes;
+        console.log(bodyChild);//HTMLCollection
+        console.log(headChild);//NodeList
+        console.log(childBody.firstElementChild);
+        console.log(childBody.firstChild);
+        console.log(childBody.lastChild);
+        let firstChild=childBody.firstElementChild;
+        let nextSibling=firstChild.nextElementSibling;
+        console.log(nextSibling);
+        let previousSibling=nextSibling.previousElementSibling;
+        console.log(previousSibling);
+        let parentNode=previousSibling.parentElement;
+        console.log(parentNode);
+        
+        
+        
+     </script>   
 </body>
 </html>

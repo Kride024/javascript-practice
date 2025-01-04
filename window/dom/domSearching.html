@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+<title>DOM Searching</title>
+    </head>
+<body>
+    <div>
+ <!-- You can gave same class to multiple element this make it diff from id -->
+        <h1 id="heading">DOM API</h1>
+<ul class="list-of--nodes">
+<li>1 node</li>
+<li>2 node</li>
+<li>3 node</li>
+<!-- <li>4th nodes</li> -->
+ <li style="display:none">5 node</li>
+</ul>
+    </div>
+    <script>
+        let findElementById=document.getElementById("heading");
+        //let findElementById=document.getElementById("#heading"); (null)❌
+        // 1. console.log(findElementById);
+        // 2. console.log(findElementById.innerHTML); (also you can write: findElementById.innerText,findElementById.textContent)
+        // console.log(findElementById.textContent);
+        let findElementsByClassName=document.getElementsByClassName("list-of--nodes");
+        // 1.console.log(findElementsByClassName); //(get collection)
+        // 2. console.log(...findElementByClassName); (get elements)
+    // Can also done by this method
+        // 3.  for(let ele of findElementByClassName){
+    //     console.log(ele);
+    //     }
+    // console.log(...findElementByClassName.innerHTML);❌ (show error)(not valid)
+    //😎 imp now to focus on inner html 
+    // for(let el of findElementByClassName){
+    //     console.log(el.innerHTML);//everything like in vscode under search class
+    //     console.log(el.innerText);// text data show which visible in browser
+    //     console.log(el.textContent);//text data show all content include comment out//css nhi understand 😂
+    //     }
+    let findElementsByTagName =document.getElementsByTagName("li");
+    // 1. console.log(findElementsByTagName);
+    // 2. console.log(...findElementsByTagName);
+    // 3. for(let name of findElementsByTagName){
+    //     console.log(name);
+    //     }
+    let findElementByQuerySelector=document.querySelector("#heading");
+    // 1.  console.log(findElementByQuerySelector);
+    // console.log(findElementByQuerySelector.innerHTML);
+    // console.log(findElementByQuerySelector.innerText="Love Life");
+    const findElementByQuerySelectorAll=document.querySelectorAll("li");//for class we use "." and li is tag thats why we directly use li 
+    console.log(findElementByQuerySelectorAll); //NodeList //like an object hence  "for of loop" can use here
+    // htmlCollection update/change quickly but NodeList take time compare to that 
+    for(let it of findElementByQuerySelectorAll){
+        console.log(it);
+        
+    }
+    </script>
+</body>
+</html>
