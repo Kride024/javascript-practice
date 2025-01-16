@@ -1,0 +1,36 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    justify-content: center;
+    margin-top:4rem;
+   
+    background-color:rgb(68, 97, 102);
+    
+}
+h1{  margin-bottom:3rem;
+    font-size: 4rem;
+    color:#fff;
+}
+.btn{
+    margin-left:2rem;
+    padding:0.5rem;
+    border-radius: 1rem;
+    background-color: yellow;
+    
+}
+#inputfield{
+    padding:1rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
