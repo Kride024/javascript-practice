@@ -7,7 +7,12 @@
 //?This entire DOM tree is then accessible to Javascript as an object.JavaScript can interact with this object to
 //? manipulate the content , structure, and style of the document dynamically.The DOM essentially serves as an interface
 //? between the HTML document and JavaScript,providing a way for script to access and modify the document's structure and content.
-
+    
+//Example:
+//const divElement = document.createElement("div");
+//divElement.classList.add("main_todo_div")
+//divElement.innerHTML=`<li>${innerValue.value}</li> <button class="deleteBtn">Delete</button>`
+// mainTodoElem.append(divElement);
 
 //todo The Document Object Model(DOM) is an Application Programming Interface(API). The DOM Tree is the structure of your HTMl document,
 //as represent by the DOM API. As stated, this API then gives us many method and properties that can use to manipulate the Tree,
@@ -123,7 +128,7 @@
 
 //* DOM - CRUD(Create,Read,Update,Delete):
 
-//? createElement(tagName): Create a new HTML element.
+//?createElement(tagName): Create a new HTML element.
 
 //?appendChild(node): Append a node as the last child of a parent node.
 
