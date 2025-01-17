@@ -221,15 +221,15 @@ console.log(life);
 // });
 // console.log(filterProduct);
 //*Ex: Find unique values
- //numbers=[1,2,3,4,5,6,7,8,9,9];
+ numbers=[1,2,3,4,5,6,7,8,9,9];
 // const value=numbers.filter((ele,idx,arr)=>{
 // return idx==arr.indexOf(ele);
 // });
 // console.log(value);
 //! set theory
-//? console.log(new Set(numbers));
-//? console.log([new Set(numbers)]);
-//? console.log(... new Set(numbers));
+ console.log(new Set(numbers));
+ console.log([new Set(numbers)]);
+ console.log(... new Set(numbers));
 
 //! how to compare and sort Array**
 
