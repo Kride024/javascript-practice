@@ -162,9 +162,9 @@ console.log(life);
 // console.log(result);
 
 
-//! 2.Includes() Method: Does array contain certain element return (T/F)
+//! 2.includes() Method: Does array contain certain element return (T/F)
 //? syntax
-// Includes(searchElement,fromIndex)
+// includes(searchElement,fromIndex)
 //console.log(numbers.includes(6));
 
 //todo challenge time
